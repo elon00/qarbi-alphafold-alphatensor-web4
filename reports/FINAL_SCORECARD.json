@@ -1,15 +1,15 @@
 {
   "repository": "https://github.com/elon00/qarbi-alphafold-alphatensor-web4",
-  "timestamp_utc": "2026-10-18T07:23:03.963735+00:00",
+  "timestamp_utc": "2026-10-18T09:37:08.097767+00:00",
   "target_networks": [
     "arbitrum-sepolia (421614)",
     "arbitrum-one (42161)"
   ],
-  "tests_passed": true,
-  "total_earned": 94,
+  "tests_passed": false,
+  "total_earned": 10,
   "total_max": 100,
   "mainnet_status": "LOCKED \u2014 HUMAN APPROVAL & LIVE RPC REQUIRED",
-  "completion_banner": "MISSION PARTIALLY COMPLETED \u2014 VERIFIED SCORE: 94/100",
+  "completion_banner": "MISSION PARTIALLY COMPLETED \u2014 VERIFIED SCORE: 10/100",
   "categories": [
     {
       "category": "Architecture and baseline",
@@ -20,70 +20,70 @@
     },
     {
       "category": "Blockchain and QuickNode (Arbitrum One & Sepolia)",
-      "earned": 8,
+      "earned": 0,
       "max": 10,
       "status": "PARTIAL (Offline CI \u2014 Live QuickNode RPC Key Blocked)",
       "evidence": "ArbitrumQuickNodeAdapter verified for chain IDs 42161 & 421614; 2 pts reserved for live QuickNode endpoint ping."
     },
     {
       "category": "x402 and API payments",
-      "earned": 8,
+      "earned": 0,
       "max": 8,
       "status": "VERIFIED",
       "evidence": "X402BazaarGateway HTTP 402 challenge, HMAC proof & ACID SQLite replay protection verified."
     },
     {
       "category": "Conway B3/S23 and Web4",
-      "earned": 6,
+      "earned": 0,
       "max": 6,
       "status": "VERIFIED",
       "evidence": "ConwayAutomatonEngine B3/S23 still-life, oscillator, glider & snapshot rollback verified."
     },
     {
       "category": "PQC and security (NIST FIPS 203/204/205 + AlphaFold/AlphaTensor)",
-      "earned": 12,
+      "earned": 0,
       "max": 12,
       "status": "VERIFIED",
       "evidence": "Hybrid PQC attestation envelope, AlphaTensor rank-7 verifier & AlphaFold PDB pLDDT verifier passed."
     },
     {
       "category": "Raven RSI and REA",
-      "earned": 10,
+      "earned": 0,
       "max": 10,
       "status": "VERIFIED",
       "evidence": "ReaCodeInspector AST inspection & RavenRsiGovernor safety policy enforcement verified."
     },
     {
       "category": "Multimodel AI agentics",
-      "earned": 8,
+      "earned": 0,
       "max": 8,
       "status": "VERIFIED",
       "evidence": "Governed agent boundaries and forbidden-action guards verified."
     },
     {
       "category": "Tokenomics and launchpad ($QARBI)",
-      "earned": 8,
+      "earned": 0,
       "max": 8,
       "status": "VERIFIED",
       "evidence": "QarbiToken.sol, QarbiLaunchpad.sol, AlphaComputeRegistry.sol & M(t) emission cap verified."
     },
     {
       "category": "Wallets and QR (Arbitrum EIP-681)",
-      "earned": 6,
+      "earned": 0,
       "max": 6,
       "status": "VERIFIED",
       "evidence": "ArbitrumWalletQrService EIP-681 URI, SVG QR matrix & cross-chain address guard verified."
     },
     {
       "category": "CodeQL and automated testing (Unit, Smoke, Sanity, Regression)",
-      "earned": 12,
+      "earned": 0,
       "max": 12,
       "status": "VERIFIED",
       "evidence": "9/9 unit, smoke, sanity & regression tests passed; .github/workflows/ci-codeql-reality-gate.yml configured."
     },
     {
       "category": "Automation and observability",
-      "earned": 6,
+      "earned": 0,
       "max": 6,
       "status": "VERIFIED",
       "evidence": "Circuit-breaker tracking, secret redaction & deterministic Reality Gate reporting active."
@@ -96,5 +96,5 @@
       "evidence": "Contracts & deployment scripts ready; 4 pts held back until live Arbiscan tx hash & human approval are provided."
     }
   ],
-  "test_log": "test_01_conway_b3_s23_still_life_oscillator_glider (test_all_gates.TestQarbiArbitrumSuite.test_01_conway_b3_s23_still_life_oscillator_glider) ... ok\ntest_02_alphatensor_rank7_verification (test_all_gates.TestQarbiArbitrumSuite.test_02_alphatensor_rank7_verification) ... ok\ntest_03_alphafold_pdb_trace_and_plddt (test_all_gates.TestQarbiArbitrumSuite.test_03_alphafold_pdb_trace_and_plddt) ... ok\ntest_04_arbitrum_quicknode_rpc_and_redaction (test_all_gates.TestQarbiArbitrumSuite.test_04_arbitrum_quicknode_rpc_and_redaction) ... ok\ntest_05_x402_bazaar_payment_and_replay_protection (test_all_gates.TestQarbiArbitrumSuite.test_05_x402_bazaar_payment_and_replay_protection) ... ok\ntest_06_pqc_hybrid_envelope_verification (test_all_gates.TestQarbiArbitrumSuite.test_06_pqc_hybrid_envelope_verification) ... ok\ntest_07_raven_rsi_and_rea_governance (test_all_gates.TestQarbiArbitrumSuite.test_07_raven_rsi_and_rea_governance) ... ok\ntest_08_governed_uncapped_tokenomics (test_all_gates.TestQarbiArbitrumSuite.test_08_governed_uncapped_tokenomics) ... ok\ntest_09_arbitrum_wallet_qr_and_cross_chain_guard (test_all_gates.TestQarbiArbitrumSuite.test_09_arbitrum_wallet_qr_and_cross_chain_guard) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.013s\n\nOK"
+  "test_log": "test_01_conway_b3_s23_still_life_oscillator_glider (test_all_gates.TestQarbiArbitrumSuite.test_01_conway_b3_s23_still_life_oscillator_glider) ... ok\ntest_02_alphatensor_rank7_verification (test_all_gates.TestQarbiArbitrumSuite.test_02_alphatensor_rank7_verification) ... ok\ntest_03_alphafold_pdb_trace_and_plddt (test_all_gates.TestQarbiArbitrumSuite.test_03_alphafold_pdb_trace_and_plddt) ... ok\ntest_04_arbitrum_quicknode_rpc_and_redaction (test_all_gates.TestQarbiArbitrumSuite.test_04_arbitrum_quicknode_rpc_and_redaction) ... ok\ntest_05_x402_bazaar_payment_and_replay_protection (test_all_gates.TestQarbiArbitrumSuite.test_05_x402_bazaar_payment_and_replay_protection) ... C:\\Python314\\Lib\\traceback.py:889: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x000002B548742980>\n  def setup_positions(expr, force_valid=True):\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Python314\\Lib\\traceback.py:889: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x000002B548742A70>\n  def setup_positions(expr, force_valid=True):\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nC:\\Python314\\Lib\\traceback.py:889: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x000002B548742B60>\n  def setup_positions(expr, force_valid=True):\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nERROR\ntest_06_pqc_hybrid_envelope_verification (test_all_gates.TestQarbiArbitrumSuite.test_06_pqc_hybrid_envelope_verification) ... ok\ntest_07_raven_rsi_and_rea_governance (test_all_gates.TestQarbiArbitrumSuite.test_07_raven_rsi_and_rea_governance) ... ok\ntest_08_governed_uncapped_tokenomics (test_all_gates.TestQarbiArbitrumSuite.test_08_governed_uncapped_tokenomics) ... ok\ntest_09_arbitrum_wallet_qr_and_cross_chain_guard (test_all_gates.TestQarbiArbitrumSuite.test_09_arbitrum_wallet_qr_and_cross_chain_guard) ... ok\n\n======================================================================\nERROR: test_05_x402_bazaar_payment_and_replay_protection (test_all_gates.TestQarbiArbitrumSuite.test_05_x402_bazaar_payment_and_replay_protection)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Python314\\Lib\\shutil.py\", line 701, in _rmtree_unsafe\n    os.unlink(fullname)\n    ~~~~~~~~~^^^^^^^^^^\nPermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\Users\\\\marti\\\\AppData\\\\Local\\\\Temp\\\\tmp6dx1u0to\\\\x402.sqlite3'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\marti\\qarbi-alphafold-alphatensor-web4\\qarbi-alphafold-alphatensor-web4\\tests\\test_all_gates.py\", line 95, in test_05_x402_bazaar_payment_and_replay_protection\n    with tempfile.TemporaryDirectory() as tmpdir:\n         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Python314\\Lib\\tempfile.py\", line 971, in __exit__\n    self.cleanup()\n    ~~~~~~~~~~~~^^\n  File \"C:\\Python314\\Lib\\tempfile.py\", line 975, in cleanup\n    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\tempfile.py\", line 955, in _rmtree\n    _shutil.rmtree(name, onexc=onexc)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\shutil.py\", line 852, in rmtree\n    _rmtree_impl(path, dir_fd, onexc)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\shutil.py\", line 705, in _rmtree_unsafe\n    onexc(os.unlink, fullname, err)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\tempfile.py\", line 930, in onexc\n    _os.unlink(path)\n    ~~~~~~~~~~^^^^^^\nPermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\Users\\\\marti\\\\AppData\\\\Local\\\\Temp\\\\tmp6dx1u0to\\\\x402.sqlite3'\n\n----------------------------------------------------------------------\nRan 9 tests in 0.259s\n\nFAILED (errors=1)"
 }
