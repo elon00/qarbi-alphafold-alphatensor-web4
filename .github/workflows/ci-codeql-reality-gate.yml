@@ -1,0 +1,48 @@
+name: QARBI Arbitrum CI, CodeQL & Reality Gate
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
+jobs:
+  codeql-security-analysis:
+    name: CodeQL Static Security Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: python, javascript-typescript
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+
+  unit-smoke-sanity-regression-gate:
+    name: Unit, Smoke, Sanity, Regression & Reality Gate
+    runs-on: ubuntu-latest
+    needs: codeql-security-analysis
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Unit, Smoke, Sanity & Regression Suite
+        run: python3 -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Execute Fail-Closed Reality Gate & Generate Scorecard
+        run: python3 scripts/reality_gate.py
