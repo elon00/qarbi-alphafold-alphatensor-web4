@@ -1,0 +1,77 @@
+{
+  "engine": "REA_Reverse_Engineer_Anything",
+  "status": "STRUCTURE_RECONSTRUCTED",
+  "analyzed_files": 23,
+  "manifest": {
+    "README.md": {
+      "bytes": 4787
+    },
+    "contracts\\AlphaComputeRegistry.sol": {
+      "bytes": 4093
+    },
+    "contracts\\QarbiLaunchpad.sol": {
+      "bytes": 2749
+    },
+    "contracts\\QarbiToken.sol": {
+      "bytes": 5073
+    },
+    "reports\\FINAL_SCORECARD.json": {
+      "bytes": 7818
+    },
+    "reports\\FINAL_SCORECARD.md": {
+      "bytes": 3060
+    },
+    "reports\\REMAINING_BLOCKERS.md": {
+      "bytes": 545
+    },
+    "scripts\\reality_gate.py": {
+      "bytes": 8048
+    },
+    "scripts\\rea_inspector.py": {
+      "bytes": 1485
+    },
+    "scripts\\rsi_engine.py": {
+      "bytes": 2039
+    },
+    "tests\\reality_check_harness.py": {
+      "bytes": 1250
+    },
+    "tests\\test_all_gates.py": {
+      "bytes": 9495
+    },
+    ".github\\workflows\\ci-codeql-reality-gate.yml": {
+      "bytes": 1255
+    },
+    ".github\\workflows\\qmoosa-rsi-rea-sync.yml": {
+      "bytes": 531
+    },
+    "src\\qarbi_engine\\alpha_science.py": {
+      "bytes": 8046
+    },
+    "src\\qarbi_engine\\arbitrum_rpc.py": {
+      "bytes": 4193
+    },
+    "src\\qarbi_engine\\conway_engine.py": {
+      "bytes": 4148
+    },
+    "src\\qarbi_engine\\pqc_envelope.py": {
+      "bytes": 4505
+    },
+    "src\\qarbi_engine\\raven_rea_governor.py": {
+      "bytes": 5888
+    },
+    "src\\qarbi_engine\\tokenomics_sim.py": {
+      "bytes": 2200
+    },
+    "src\\qarbi_engine\\wallet_qr.py": {
+      "bytes": 2927
+    },
+    "src\\qarbi_engine\\x402_bazaar.py": {
+      "bytes": 6018
+    },
+    "src\\qarbi_engine\\__init__.py": {
+      "bytes": 92
+    }
+  },
+  "timestamp": 1794019541
+}
